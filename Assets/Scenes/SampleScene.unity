@@ -241,7 +241,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22865209}
   serializedVersion: 5
-  m_Mass: 5
+  m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -298,7 +298,7 @@ Transform:
   m_GameObject: {fileID: 199047367}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3.7, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -642,7 +642,7 @@ Transform:
   m_GameObject: {fileID: 1564067755}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.423975, y: -0.09999988, z: 27.78932}
+  m_LocalPosition: {x: -33.2, y: 2.9, z: 31.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -663,6 +663,7 @@ GameObject:
   - component: {fileID: 1578477507}
   - component: {fileID: 1578477506}
   - component: {fileID: 1578477505}
+  - component: {fileID: 1578477509}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -761,8 +762,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.7179513, y: 0.5405492, z: 1.8237107}
-  m_Center: {x: 0.85897565, y: -0.2702746, z: -0.91185534}
+  m_Size: {x: 10, y: 2, z: 10}
+  m_Center: {x: 5, y: -1, z: -5}
 --- !u!114 &1578477508
 MonoBehaviour:
   m_ObjectHideFlags: 16
@@ -770,7 +771,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578477503}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -2105364572, guid: 355474d781e5561489e3595e39866770, type: 3}
   m_Name: 
@@ -822,7 +823,23 @@ MonoBehaviour:
   saveData: {fileID: 0}
   saveDataAssetGuid: d401c33aed5f4094c84b1a6219d7b161
   IsSaveDataLoaded: 0
-  <IsDirtySaveData>k__BackingField: 0
+  <IsDirtySaveData>k__BackingField: 1
+--- !u!114 &1578477509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578477503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a783c837c5c015a499c7117bbbc0fafa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::Movimenta\xE7\xE3oPlano"
+  maxTiltDegrees: 35
+  smoothSpeed: 10
+  invertX: 0
+  invertY: 0
 --- !u!1 &1863607085
 GameObject:
   m_ObjectHideFlags: 0
